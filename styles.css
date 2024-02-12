@@ -1,146 +1,108 @@
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-#navbar {
-  background-color: #fa59ca;
-  color: white;
-  padding: 10px 20px;
+.nav {
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 1000;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  background-color: red;
+  height: 10%;
 }
 
-.nav-list {
-  list-style: none;
+.welcome-section {
   display: flex;
-  justify-content: flex-start;
-}
-
-.nav-links {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  margin-left: 20px;
-}
-
-#welcome-section {
-  text-align: center;
-  padding: 80px 20px;
-  background-color: #333;
-  color: white;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  font-size: large;
-  text-align: left;
+  height: 50vh;
+  background-color: rgb(224, 220, 245);
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat;
+  max-width: 1280px;
+  margin: auto;
+  margin-bottom: 6rem;
 }
 
-.about-afghanistan h1 {
+.project-section {
   text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
 }
 
-.cities {
-  text-align: center;
-  padding: 20px;
-  background-color: #86cfec;
+P{
   display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.cities-header {
-  font-size: 28px;
-  margin-bottom: 30px;
+h1,h2{
+    text-align: center;
+    border: 20px;
+    color: brown;
 }
 
-.cities-afg {
+.contact-section{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background-color: grey;
+}
+.contact-list{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
   flex-wrap: wrap;
-  justify-content: center;
+
+}
+.contact-details{
+  font-size: 2.5rem;
+  text-shadow: 1rem 2rem;
+  border-radius: 2px;
+  
+}
+ 
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  
 }
 
-.city-link {
-  margin: 15px; /* distance between photos */
-  width: 300px;
-  height: 340px;
-  background: #1a1a1a;
-  border-radius: 10px;
-  border: 1px solid black;
-  transition: transform 0.3s ease-in-out;
+*{
+  margin: 0;
+  box-sizing: inherit;
+
 }
 
-.city-link:hover {
-  transform: scale(1.3);
-}
-
-.city-image {
-  width: 300px;
-  height: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
-
-.city-title {
-  margin: 10px auto;
-  font-size: 18px;
-  color: aliceblue;
-  text-align: center;
-}
-
-.information-section {
-  padding: 20px;
-  background-color: #78e9df;
-  color: black;
-}
-
-.information-header {
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.information-links {
-  text-align: center;
-  font-size: large;
-  margin-top: 10px;
-}
-
-.information-links a {
-  text-decoration: none;
-  color: white;
-  background-color: #1a1a1a;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
+footer{
   display: flex;
-  justify-content: center;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.information-links a:hover {
-  background-color: #965151;
-}
-
-footer {
+  font-weight: 300;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color:green;  
+  border-top: 4px solid;
   text-align: center;
-  padding: 10px 0;
-  background-color: #426e83;
-  color: white;
-  font-size: 18px;
 }
 
-@media only screen and (max-width: 600px) {
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
+footer > p{
+   margin: 2rem;
+}
+@media screen and (min-width: 200px) {
+  body {
+    background-color: lightgreen;
   }
-  .about-afghanistan {
-    background: #426e83;
-    color: black;
-    font-size: 15px;
-  }
-}/*# sourceMappingURL=styles.css.map */
+}
